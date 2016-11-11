@@ -1,0 +1,13 @@
+# Spring-Cloud-Config-Server with ssh backend git with ecdsa-sha2-nistp256
+
+I have problems config ssh with Spring Cloud Condig Server, the server use ecdsa-sha2-nistp256.
+
+To use this git backend, I config these files:
+
+* *config* file in ~/.ssh folder with this:
+----
+Host * 
+  UserKnownHostsFile /dev/null 
+  StrictHostKeyChecking no
+----
+* *id_rsa* with the private key autogenerate with *ssh-keygen*
